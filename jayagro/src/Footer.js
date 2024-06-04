@@ -27,7 +27,7 @@ export default function Footer() {
     const submitForm = async (e) => {
         e.preventDefault();
 
-        await axios.post('https://jayagro.onrender.com/subscribe', state)
+        await axios.post('https://jay-agro-server.onrender.com/subscribe', state)
             .then((response) => {
                 toast.success(response.data.msg, { position: "top-center" });
                 const localemail = localStorage.setItem("subscriber", state.Email);

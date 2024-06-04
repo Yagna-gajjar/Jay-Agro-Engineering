@@ -23,7 +23,7 @@ export default function EditContact() {
     useEffect(() => {
         setLoading(true);
         const fetchData = async () => {
-            const response = await axios.get('https://jayagro.onrender.com/onecontactuser/' + id);
+            const response = await axios.get('https://jay-agro-server.onrender.com/onecontactuser/' + id);
             setContactuser({
                 username: response.data.username,
                 Email: response.data.Email,
@@ -44,7 +44,7 @@ export default function EditContact() {
 
     const submitForm = async (e) => {
         e.preventDefault();
-        await axios.put('https://jayagro.onrender.com/editcontactuser/' + id, contactusers)
+        await axios.put('https://jay-agro-server.onrender.com/editcontactuser/' + id, contactusers)
             .then((response) => {
                 toast.success(response.data.msg, { position: "top-center", iconTheme: { primary: 'rgb(255,193,7)', secondary: 'white' } });
                 nav("/");

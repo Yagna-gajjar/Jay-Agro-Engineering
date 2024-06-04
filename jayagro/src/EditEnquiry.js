@@ -23,7 +23,7 @@ export default function EditEnquiry() {
     useEffect(() => {
         setLoading(true);
         const fetchData = async () => {
-            const response = await axios.get('https://jayagro.onrender.com/oneenquiryuser/' + id);
+            const response = await axios.get('https://jay-agro-server.onrender.com/oneenquiryuser/' + id);
             setEnquiryusers({
                 nameofproduct: response.data.nameofproduct,
                 name: response.data.name,
@@ -53,7 +53,7 @@ export default function EditEnquiry() {
 
     const submitForm = async (e) => {
         e.preventDefault();
-        await axios.put('https://jayagro.onrender.com/editenquiryuser/' + id, enquiryusers)
+        await axios.put('https://jay-agro-server.onrender.com/editenquiryuser/' + id, enquiryusers)
             .then((response) => {
                 toast.success(response.data.msg, { position: "top-center", iconTheme: { primary: 'rgb(255,193,7)', secondary: 'white' } });
                 nav("/");
@@ -68,7 +68,7 @@ export default function EditEnquiry() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get('https://jayagro.onrender.com/dthrig');
+            const response = await axios.get('https://jay-agro-server.onrender.com/dthrig');
             setDth(response.data);
         }
         fetchData();
@@ -78,7 +78,7 @@ export default function EditEnquiry() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get('https://jayagro.onrender.com/productparts');
+            const response = await axios.get('https://jay-agro-server.onrender.com/productparts');
             setProductpart(response.data);
         }
         fetchData();

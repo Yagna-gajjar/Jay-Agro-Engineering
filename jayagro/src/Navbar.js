@@ -38,7 +38,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get('https://jayagro.onrender.com/dthrig');
+            const response = await axios.get('https://jay-agro-server.onrender.com/dthrig');
             setDth(response.data);
         }
         fetchData();
@@ -48,7 +48,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get('https://jayagro.onrender.com/productparts');
+            const response = await axios.get('https://jay-agro-server.onrender.com/productparts');
             setProductpart(response.data);
         }
         fetchData();
