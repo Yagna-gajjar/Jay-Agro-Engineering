@@ -1,0 +1,390 @@
+#linkdecore {
+    text-decoration: none;
+}
+
+.btn {
+    color: white;
+}
+
+.btn:hover {
+    background: rgba(255, 164, 17, 0.2);
+    color: rgb(255, 166, 0);
+}
+
+.whatsaApp {
+    position: sticky;
+    bottom: 10%;
+    left: 90%;
+    border-radius: 50%;
+    background-color: rgb(37, 211, 102);
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+
+.phones {
+    text-decoration-line: none;
+}
+
+.form-control:focus {
+    border-color: rgb(255, 193, 7);
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+.form-control:checked {
+    border-color: rgb(255, 193, 7);
+}
+
+.form-check-input {
+    border-color: gray;
+}
+
+.form-check-input:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.form-check-input:checked {
+    background-color: rgb(255, 193, 7);
+    border-color: rgb(255, 193, 7);
+}
+
+
+.phones:hover {
+    border-bottom: 2px solid rgb(255, 164, 17);
+}
+
+#contentofhome {
+    text-align: justify;
+}
+
+#aboutofhome {
+    background-image: url("../src/img/download.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* herosection starts */
+
+#herosection h3 {
+    font-size: 25px;
+}
+
+#herosection h1 {
+    font-size: 40px;
+}
+
+#herosection h2 {
+    font-size: 35px;
+}
+
+#herosection h4 {
+    font-size: 20px;
+}
+
+#herosection p {
+    font-size: 15px;
+}
+
+@media (max-width: 640px) {
+
+    #herosection h3 {
+        font-size: 20px;
+    }
+
+    #herosection h1 {
+        font-size: 35px;
+    }
+
+    #herosection h2 {
+        font-size: 30px;
+    }
+
+    #herosection h4 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #herosection {
+        width: 90%;
+    }
+
+    #herosection h3 {
+        font-size: 15px;
+    }
+
+    #herosection h1 {
+        font-size: 30px;
+    }
+
+    #herosection h2 {
+        font-size: 25px;
+    }
+
+    #herosection h4 {
+        font-size: 10px;
+    }
+
+    #herosection p {
+        font-size: 10px;
+    }
+
+    #aboutofhome {
+        width: 90%;
+    }
+
+    #homedth {
+        width: 90%;
+    }
+}
+
+/* herosection ends */
+
+#card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card:hover {
+    transform: scale(1.05);
+}
+
+#card .card-title {
+    font-size: 25px;
+}
+
+#homelink {
+    text-decoration-line: none;
+    color: gray;
+}
+
+#content {
+    text-align: justify;
+}
+
+#homedth {
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+button .navbar-toggler:focus {
+    border: none;
+}
+
+/* Contact starts */
+.p-5 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .p-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-3 .mt-3 {
+    opacity: 0.5;
+}
+
+.row .rounded-circle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact ends */
+
+/* DTH rig start */
+
+#dthLink {
+    text-decoration: none;
+}
+
+#dthLink:hover {
+    transform: scale(1.03);
+    transition: all 0.3s linear;
+}
+
+#th {
+    color: #ffc107;
+}
+
+.t {
+    color: #ffc107;
+}
+
+/* DTH rig ends */
+
+/* DTHRigdetails starts */
+.container .shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DTHRigdetails ends */
+
+/* Product Part starts */
+
+#bnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#productcard {
+    text-decoration: none;
+}
+
+#productcard:hover {
+    transform: scale(1.05);
+    transition: all 0.3s linear;
+    text-decoration: none;
+}
+
+/* Product Part end */
+
+/* Footer strat */
+.footer {
+    border: 1px solid rgb(255, 166, 0);
+}
+
+.card-header {
+    font-size: 25px;
+}
+
+.subemail {
+    border: 1px solid rgb(255, 166, 0);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+/* Footer ends */
+
+/* erro 404 */
+
+.error_404 {
+    display: flex;
+    justify-content: center;
+}
+
+/* edit enquiry */
+
+option:hover {
+    background-color: #ffc107;
+}
+
+/* Log In page */
+
+.SignIn_img {
+    transition: all 2s ease-in;
+    filter: drop-shadow(0px 0px 6px #ffc107);
+}
+
+.login_text {
+    font-size: 15px;
+}
+
+.login_icons {
+    color: #ffbf00;
+    padding-inline: 20px;
+    font-size: 20px;
+}
+
+.singnIn_Inputs {
+    color: gray;
+}
+
+.pass_eye {
+    position: relative;
+    top: 15px;
+    right: 40px;
+    color: #ffa407;
+    font-size: 20px;
+}
+
+@media (min-width: 992px) {
+
+    .SignIn_img {
+        width: 40%;
+    }
+
+    .SignIn_form {
+        width: 60%;
+    }
+
+    .login_text {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .pass_eye {
+        top: 7px;
+    }
+}
+
+.singnIn_Inputs {
+    outline: none;
+    border: none;
+    width: 600px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.493);
+}
+
+@media (max-width: 720px) {
+
+    .singnIn_Inputs {
+        width: 500px;
+    }
+
+}
+
+
+@media (max-width: 617px) {
+
+    .singnIn_Inputs {
+        width: 400px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .singnIn_Inputs {
+        width: 350px;
+    }
+
+    .login_text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .singnIn_Inputs {
+        width: 250px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .singnIn_Inputs {
+        width: 200px;
+    }
+}
