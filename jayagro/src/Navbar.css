@@ -37,6 +37,7 @@ ul {
 
 .dropdown-item {
   font-size: 15px;
+  font-weight: bold;
 }
 
 .dropdown-item:hover {
@@ -71,7 +72,7 @@ ul {
   }
 
   .dropdown-item {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 
@@ -96,6 +97,11 @@ ul {
     padding-inline: 8px;
     font-weight: bolder;
   }
+
+
+  .dropdown-item {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 503px) {
@@ -108,10 +114,6 @@ ul {
 
   .navbar-brand {
     font-size: 25px;
-  }
-
-  .nav-link {
-    font-size: 15px;
   }
 
   .nav-item {
@@ -128,6 +130,10 @@ ul {
 
 @media (max-width: 445px) {
   .nav-link {
+    font-size: 13px;
+  }
+
+  .dropdown-item {
     font-size: 13px;
   }
 }
@@ -175,4 +181,23 @@ ul {
   .nav-link {
     font-size: 11px;
   }
+}
+
+
+@media (max-width: 333px) {
+
+  .logoimg {
+    width: 40px;
+    height: 30px;
+    margin: 0px 50px 0px 0px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 10px;
+  }
+
 }
