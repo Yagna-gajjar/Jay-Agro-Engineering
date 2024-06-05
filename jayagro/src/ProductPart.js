@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Enquiry from "./Enquiry";
+import Enquiry from "./Enquiry.js";
 import "./ProductPart.css";
 import Loader from "./Loader.js";
 
