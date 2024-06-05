@@ -69,7 +69,7 @@ export default function Home() {
                 <div id="home">
                     <div id="herosection" className="container mt-5 mb-5 p-4 shadow">
                         <div className="row">
-                            <div className="col-lg col-sm-12 opacity-50 text-warning icon-box">
+                            <div className="col-lg col-sm-12 text-warning icon-box">
                                 <h3>Welcom to</h3>
                                 <h1>Jay Agro Engineering</h1><br />
                                 <h2>

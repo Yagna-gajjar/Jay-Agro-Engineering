@@ -141,7 +141,7 @@ export const equiryusers = async (req, res) => {
                 <h3 style="color: rgb(255, 193, 7);  font-weight: 700;">
                     Requirement Details: <span style="color: black; font-weight: 400;">`+ req.body.RequirementDetails + `</span>
                 </h3>
-                <a href="http://localhost:3000/editenquiry/`+ userData._id + `"  target='_self'>Edit your Enquiry </a>
+                <a href="https://jay-agro-server.onrender.com/editenquiry/`+ userData._id + `"  target='_self'>Edit your Enquiry </a>
             </div>`
             };
             transporter.sendMail(mail_configs, function (error, info) {
@@ -215,7 +215,7 @@ export const contactusers = async (req, res) => {
             <h3 style="color: rgb(255, 193, 7);  font-weight: 700;">
                 Your subject: <span style="color: black; font-weight: 400;">`+ req.body.subject + `</span>
             </h3>
-            <a href="http://localhost:3000/editcontact/`+ userData._id + `"  target='_self'>Edit your Contact </a>
+            <a href="https://jay-agro-server.onrender.com/editcontact/`+ userData._id + `"  target='_self'>Edit your Contact </a>
             <h4>You can change your contact only for 1 day</h4>
         </div>`
             };

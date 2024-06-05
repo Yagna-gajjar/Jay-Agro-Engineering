@@ -77,11 +77,11 @@ export default function Navbar() {
                     </div>
                     <div>
                         <div>
-                            <ul class="navbar ms-4 me-auto mb-0 mb-lg-0 pe-md-2 pe-lg-3">
-                                <li class="nav-item mb-1 ps-1 pe-1">
+                            <ul class="navbar me-auto mb-0 mb-lg-0 pe-md-2 pe-lg-3">
+                                <li class="nav-item mb-1">
                                     <Link class="nav-link active text-truncate" aria-current="page" to="/">Home</Link>
                                 </li>
-                                <li class="nav-item mb-1 ps-1 pe-1">
+                                <li class="nav-item mb-1">
                                     <Link to="./About" class="nav-link text-truncate">About Us</Link>
                                 </li>
                                 <li class="nav-item dropdown mb-1">

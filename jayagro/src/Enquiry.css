@@ -3,6 +3,10 @@
     overflow: scroll;
 }
 
+textarea {
+    resize: none;
+}
+
 ::-webkit-scrollbar {
     width: 2px;
     height: 8px;
