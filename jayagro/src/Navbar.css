@@ -35,6 +35,10 @@ ul {
   border-bottom: 2px solid white;
 }
 
+.nav-link {
+  font-size: 20px;
+}
+
 .dropdown-item {
   font-size: 15px;
   font-weight: bold;
@@ -43,6 +47,42 @@ ul {
 .dropdown-item:hover {
   background-color: rgb(255, 193, 7);
   color: white;
+}
+
+.phone_menu {
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 1199px) {
+  .navlinks {
+    display: none;
+  }
+
+  .phone_menu {
+    padding-top: 10px;
+  }
+
+  .display {
+    opacity: 1;
+    max-height: 500px;
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header_menu_bar {
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -55,16 +95,6 @@ ul {
     width: 70px;
     height: 60px;
     margin: 0px 50px 0px 0px;
-  }
-
-  .nav-link {
-    font-size: 20px;
-  }
-
-  .nav-item {
-    border-bottom: 1px solid rgb(255, 191, 0);
-    padding-inline: 8px;
-    font-weight: bolder;
   }
 
   .btn {
@@ -88,17 +118,6 @@ ul {
     font-size: 30px;
   }
 
-  .nav-link {
-    font-size: 15px;
-  }
-
-  .nav-item {
-    border-bottom: 1px solid rgb(255, 191, 0);
-    padding-inline: 8px;
-    font-weight: bolder;
-  }
-
-
   .dropdown-item {
     font-size: 15px;
   }
@@ -108,18 +127,12 @@ ul {
 
   .logoimg {
     width: 50px;
-    height: 40px;
+    height: 45px;
     margin: 0px 50px 0px 0px;
   }
 
   .navbar-brand {
     font-size: 25px;
-  }
-
-  .nav-item {
-    border-bottom: 1px solid rgb(255, 191, 0);
-    padding-inline: 7px;
-    font-weight: bolder;
   }
 
   .btn {
@@ -129,9 +142,6 @@ ul {
 }
 
 @media (max-width: 445px) {
-  .nav-link {
-    font-size: 13px;
-  }
 
   .dropdown-item {
     font-size: 13px;
@@ -146,58 +156,65 @@ ul {
     font-weight: bolder;
   }
 
-}
-
-@media (max-width: 398px) {
-
   .logoimg {
-    width: 40px;
-    height: 30px;
+    width: 45px;
+    height: 40px;
     margin: 0px 50px 0px 0px;
   }
 
   .navbar-brand {
     font-size: 20px;
+  }
+
+}
+
+@media (max-width: 398px) {
+
+  .logoimg {
+    width: 35px;
+    height: 30px;
+    margin: 0px 50px 0px 0px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
   }
 
   .nav-item {
     border-bottom: 1px solid rgb(255, 191, 0);
     padding-inline: 4px;
   }
+
+  .navbar-toggler {
+    font-size: 15px;
+  }
+
 }
 
 @media (max-width: 373px) {
 
   .logoimg {
     width: 40px;
-    height: 30px;
+    height: 35px;
     margin: 0px 50px 0px 0px;
   }
 
   .navbar-brand {
     font-size: 20px;
-  }
-
-  .nav-link {
-    font-size: 11px;
   }
 }
 
 
-@media (max-width: 333px) {
+@media (max-width: 350px) {
 
   .logoimg {
     width: 40px;
-    height: 30px;
+    height: 35px;
     margin: 0px 50px 0px 0px;
   }
 
   .navbar-brand {
-    font-size: 20px;
-  }
-
-  .nav-link {
-    font-size: 10px;
+    font-size: 17px;
   }
 
 }
