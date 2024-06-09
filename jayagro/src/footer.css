@@ -1,0 +1,34 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+.footer_name {
+    color: white;
+}
+
+.footer_brand {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_par {
+    color: white;
+}
+
+.footer_links {
+    color: white;
+}
+
+li {
+    padding-block: 5px;
+}
+
+.links {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.links:hover {
+    color: rgb(255, 191, 0);
+}
