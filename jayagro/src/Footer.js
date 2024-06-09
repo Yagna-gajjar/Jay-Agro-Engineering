@@ -24,15 +24,19 @@ export default function Footer() {
         fetchData();
     }, [])
 
+    const gototop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+
     let a = dth.map((e) => {
         return (
-            <li><Link class="text-truncate links" to={"/dthdetails/" + e._id}>{e.dthname} DTH Rig</Link></li>
+            <li><Link onClick={gototop} class="text-truncate links" to={"/dthdetails/" + e._id}>{e.dthname} DTH Rig</Link></li>
         );
     })
 
     let b = productpart.map((e) => {
         return (
-            <li><Link class="text-truncate links" to='./ProductPart' >{e.productname}</Link></li>
+            <li><Link onClick={gototop} class="text-truncate links" to='./ProductPart' >{e.productname}</Link></li>
         );
     })
 
@@ -51,10 +55,10 @@ export default function Footer() {
                 <div className="footer_links col-md-12 col-lg-4 p-3 p-md-5">
                     <ul>
                         <h3>Quick Links</h3>
-                        <li><Link className="links" to="/">Home</Link></li>
-                        <li><Link className="links" to="./About">About Us</Link></li>
-                        <li><Link className="links" to="./DTHrig">DTH Rig</Link></li>
-                        <li><Link className="links" to="./ProductPart">Product Part</Link></li>
+                        <li><Link onClick={gototop} className="links" to="/">Home</Link></li>
+                        <li><Link onClick={gototop} className="links" to="./About">About Us</Link></li>
+                        <li><Link onClick={gototop} className="links" to="./DTHrig">DTH Rig</Link></li>
+                        <li><Link onClick={gototop} className="links" to="./ProductPart">Product Part</Link></li>
                     </ul>
                 </div>
                 <div className="footer_links col-md-12 col-lg-4 p-3 p-md-5">
