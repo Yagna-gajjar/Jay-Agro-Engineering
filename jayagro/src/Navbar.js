@@ -54,6 +54,11 @@ export default function Navbar() {
         fetchData();
     }, [])
 
+
+    const gototop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+
     let a = dth.map((e) => {
         return (
             <li><Link class="dropdown-item text-truncate" to={"/dthdetails/" + e._id}>{e.dthname} DTH Rig</Link></li>
@@ -83,14 +88,14 @@ export default function Navbar() {
                     <div className="navlinks">
                         <ul class="navbar me-auto mb-0 mb-lg-0 pe-md-2 pe-lg-3">
                             <li class="nav-item mb-1">
-                                <Link class="nav-link active text-truncate" aria-current="page" to="/">Home</Link>
+                                <Link onClick={gototop} class="nav-link active text-truncate" aria-current="page" to="/">Home</Link>
                             </li>
                             <li class="nav-item mb-1">
-                                <Link to="./About" class="nav-link text-truncate">About Us</Link>
+                                <Link onClick={gototop} to="./About" class="nav-link text-truncate">About Us</Link>
                             </li>
                             <li class="nav-item dropdown">
                                 <div class="btn-group dropnavlink">
-                                    <Link to="./DTHrig" class="nav-link text-truncate">DTH Rig
+                                    <Link onClick={gototop} to="./DTHrig" class="nav-link text-truncate">DTH Rig
                                     </Link>
                                     <button type="button" class="btn btn-warning btn-sm text-black dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                                     </button>
@@ -100,7 +105,7 @@ export default function Navbar() {
                             </li>
                             <li class="nav-item dropdown">
                                 <div class="btn-group dropnavlink">
-                                    <Link to="./ProductPart" class="nav-link text-truncate">Product Part</Link>
+                                    <Link onClick={gototop} to="./ProductPart" class="nav-link text-truncate">Product Part</Link>
                                     <button type="button" class="btn btn-warning btn-sm text-black dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                                     </button>
                                     <ul class="dropdown-menu">
@@ -109,7 +114,7 @@ export default function Navbar() {
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <Link to="./contact" class="nav-link text-truncate mb-1 ps-1 pe-1">Contact Us</Link>
+                                <Link onClick={gototop} to="./contact" class="nav-link text-truncate mb-1 ps-1 pe-1">Contact Us</Link>
                             </li>
                         </ul>
                     </div>
@@ -117,27 +122,27 @@ export default function Navbar() {
                 <div className="phone_menu">
                     <ul class="navbar me-auto mb-0 mb-lg-0 pe-md-2 pe-lg-3">
                         <li class="nav-item mb-1">
-                            <Link class="nav-link active text-truncate" aria-current="page" to="/">Home</Link>
+                            <Link onClick={gototop} class="nav-link active text-truncate" aria-current="page" to="/">Home</Link>
                         </li>
                         <li class="nav-item mb-1">
-                            <Link to="./About" class="nav-link text-truncate">About Us</Link>
+                            <Link onClick={gototop} to="./About" class="nav-link text-truncate">About Us</Link>
                         </li>
                         <li class="nav-item dropdown mb-1">
                             <div class="btn-group dropnavlink">
-                                <Link to="./DTHrig" class="nav-link text-truncate">DTH Rig</Link>
+                                <Link onClick={gototop} to="./DTHrig" class="nav-link text-truncate">DTH Rig</Link>
                                 <button type="button" class="btn btn-warning btn-sm text-black dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                 <ul class="dropdown-menu">{a}</ul>
                             </div>
                         </li>
                         <li class="nav-item dropdown mb-1">
                             <div class="btn-group dropnavlink">
-                                <Link to="./ProductPart" class="nav-link text-truncate">Product Part</Link>
+                                <Link onClick={gototop} to="./ProductPart" class="nav-link text-truncate">Product Part</Link>
                                 <button type="button" class="btn btn-warning btn-sm text-black dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                 <ul class="dropdown-menu">{b}</ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <Link to="./contact" class="nav-link text-truncate mb-1">Contact Us</Link>
+                            <Link onClick={gototop} to="./contact" class="nav-link text-truncate mb-1">Contact Us</Link>
                         </li>
                     </ul>
 
